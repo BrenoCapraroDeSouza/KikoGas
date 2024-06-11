@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
     <title>Kiko Gas</title>
     <link rel="stylesheet" href="index.css">
@@ -28,10 +29,10 @@
                 <a href="#home">Home</a>
                 <a href="#sobre-nos">Sobre nós</a>
                 <a href="#produtos">Produtos</a>
-                <a href="https://api.whatsapp.com/send/?phone=5548999370107&text&type=phone_number&app_absent=0/">Contato</a>
+                <a href="https://api.whatsapp.com/send/?phone=5548999370107&text&type=phone_number&app_absent=0/" target="_blank">Contato</a>
             </nav>
-            <div class="pedido"><a href="https://linktr.ee/kikogas/" target="_blank">FAÇA SEU PEDIDO AQUI</a></div>
-        </div> 
+        </div>
+        <div class="pedido"><a href="https://linktr.ee/kikogas/" target="_blank">FAÇA SEU PEDIDO AQUI</a></div> 
     </header>
     <main>
 
@@ -82,15 +83,17 @@
             <div class="left">
                 <img src="assets/about-us.png" alt="">
             </div>
+            <div class="middle">
+            </div>
             <div class="right">
-                <h2 class="section-title">Sobre nós</h2>
+                <h2 class="section-title">Sobre nós   <ion-icon name="people-circle"></ion-icon></h2>
                 <p>Empresa consolidada no mercado e região com <strong>mais de 50 anos de história</strong>. Sinônimo de bom atendimento, buscamos levar a felicidade para dentro de sua casa com total segurança.</p>
                 <p>O grupo <strong>KIKO</strong> presta todos os tipos de serviços relacionados ao gás <strong><abbr title="Gás Liquefeto de Petroleo">GLP</abbr></strong>. Desde entrega na casa do cliente, até manutenções, limpezas, orçamentos, instalações residenciais e prediais.</p>
             </div>
         </section>
 
         <section class="filiais">
-            <h2 class="section-title">Saiba Onde Nos Encontrar</h2>
+            <h2 class="section-title">Saiba Onde Nos Encontrar<ion-icon name="location-outline"></ion-icon></h2>
             <div class="filiais-container">
                 <div class="filial">
                     <div class="img-top">
@@ -98,7 +101,8 @@
                     </div>
                     <div class="bottom-text">
                         <h3 class="title">Canelinha - SC</h3>
-                        <p class="adress">Cobre - Rua Antonio Cardoso, n212</p>
+                        <p class="adress">Cobre - Rua Antonio Cardoso, n211</p>
+                        <p class="adress"><ion-icon name="logo-whatsapp"></ion-icon> (48) 99989-7585</p>
                     </div>
                 </div>
                 <div class="filial">
@@ -108,6 +112,7 @@
                     <div class="bottom-text">
                         <h3 class="title">Sao Joao Batista - SC</h3>
                         <p class="adress">Centro - Rua Zunino Neto, n251</p>
+                        <p class="adress"><ion-icon name="logo-whatsapp"></ion-icon> (48) 99937-0107</p>
                     </div>
                 </div>
                 <div class="filial">
@@ -117,27 +122,33 @@
                     <div class="bottom-text">
                         <h3 class="title">Nova Trento - SC</h3>
                         <p class="adress">Besenello - Rua Carlos Tridapalli, n372</p>
+                        <p class="adress"><ion-icon name="logo-whatsapp"></ion-icon> (48) 99912-7470</p>
                     </div>
                 </div>
             </div>
             <div class="horario-empresa">
-                <h3 class="section-title">Horário de Funcionamento</h4>
+                <h3 class="section-title">Horário de Funcionamento   <ion-icon name="timer-outline"></ion-icon></h4>
                 <ul class="horario">
-                    <li class=""><strong>Entregas</strong></li>
-                    <ul class="horario-funcionamento">    
-                        <li>Seg - Sex: 08:00 às 21:30</li>
-                        <li>Sab - Dom - Feriados: 08:00 às 20:00</li>
-                    </ul>
-                    <li class=""><strong>Escritório</strong></li>
-                    <ul class="horario-funcionamento">
-                        <li>Seg - Sex: 08:00 às 18:00</li>
-                        <li>Sab: 08:00 às 12:00</li>
-                    </ul>
-                    <li class=""><strong>Instalações</strong></li>
-                    <ul class="horario-funcionamento">
-                        <li>Seg - Sex: 08:00 às 17:30</li>
-                        <li>Agendamento Prévio</li>
-                    </ul>
+                    <li class=""><strong>Entregas</strong>
+                        <ul class="horario-funcionamento">    
+                            <li>Seg - Sex: 08:00 às 21:30</li>
+                            <li>Sab - Dom - Feriados: 08:00 às 20:00</li>
+                        </ul>
+                    </li>
+                    
+                    <li class=""><strong>Escritório</strong>
+                        <ul class="horario-funcionamento">
+                            <li>Seg - Sex: 08:00 às 18:00</li>
+                            <li>Sab: 08:00 às 12:00</li>
+                        </ul>
+                    </li>
+                    <li class=""><strong>Instalações</strong>
+                        <ul class="horario-funcionamento">
+                            <li>Seg - Sex: 08:00 às 17:30</li>
+                            <li>Agendamento Prévio</li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </div>
         </section>
@@ -166,40 +177,60 @@
         <section class="products" id="produtos">
             <h2 class="section-title">Produtos</h2>
             <div class="gallery">
+
                 <div class="card-item">
-                    <img src="assets/p5.png" alt="" class="item-img" id="p5">
-                    <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank">
-                        <h3 class="item-title">P05</h3>
-                        <p class="item-details">Botijão residencial pequeno 05kg</p>
-                        <h4 class="item-price">R$ 70,00</h4>
-                    </a>
+                    <div class="imgteste"><img src="assets/p5.png" alt="" class="item-img" id="p5"></div>
+                    <div class="item-details">
+                        <h3>P05</h3>
+                        <p>Botijão residencial pequeno 05kg</p>
+                    </div>
+                    <div class="item-price">
+                        <h4>R$ 70,00</h4>
+                        <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank">
+                            <button class="laranja">COMPRAR</button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="card-item">
-                    <img src="assets/P13.png" alt="" class="item-img">
-                    <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank">
-                        <h3 class="item-title">P13</h3>
-                        <p class="item-details">Botijão residencial padrao 13kg</p>
-                        <h4 class="item-price">R$ 135,00</h4>
-                    </a>
+                    <div class="imgteste"><img src="assets/p13.png" alt="" class="item-img"></div>
+                        <div class="item-details">
+                            <h3>P13</h3>
+                            <p>Botijão residencial padrao 13kg</p>
+                        </div>
+                        <div class="item-price">
+                            <h4>R$ 135,00</h4>
+                            <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank"></a>
+                            <button class="laranja">COMPRAR</button>
+                            </a>
+                        </div>
                 </div>
 
                 <div class="card-item">
-                    <img src="assets/P20.png" alt="" class="item-img" id="p20">
-                    <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank">
-                        <h3 class="item-title">P20</h3>
-                        <p class="item-details">Botijão industrial 20kg</p>
-                        <h4 class="item-price">R$ 235,00</h4>
-                    </a>
+                    <div class="imgteste"><img src="assets/p20.png" alt="" class="item-img" id="p20"></div>
+                    <div class="item-details">
+                        <h3>P20</h3>
+                        <p>Botijão industrial 20kg</p>
+                    </div>
+                    <div class="item-price">
+                        <h4>R$ 235,00</h4>
+                        <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank"></a>
+                        <button class="laranja">COMPRAR</button>
+                        </a>
+                    </div>
                 </div>
-                
                 <div class="card-item">
-                    <img src="assets/P45.png" alt="" class="item-img">
-                    <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank">
-                        <h3 class="item-title">P45</h3>
-                        <p class="item-details">Botijão comercial  45kg</p>
-                        <h4 class="item-price">R$ 505,00</h4>
-                    </a>
+                    <div class="imgteste"><img src="assets/p45.png" alt="" class="item-img"></div>
+                    <div class="item-details">
+                        <h3>P45</h3>
+                        <p>Botijão comercial  45kg</p>
+                    </div>
+                    <div class="item-price">
+                        <h4>R$ 505,00</h4>
+                        <a href="https://eltok.com.br/app/kiko-gas/" class="item-link" target="_blank"></a>
+                        <button class="laranja">COMPRAR</button>
+                        </a>
+                    </div>
                 </div>
             </div>    
         </section>
@@ -223,14 +254,14 @@
             </div>
             <div class="footer-left">
                 <h3 class="footer-title">Filial Canelinha</h3>
-                <p><span class="subtitle-desktop">Telefone: </span>(48) 3265-0001</p>
-                <p><span class="subtitle-desktop">Whatsapp: </span>(48) 99937-0107</p>
+                <p><span class="subtitle-desktop">Telefone: </span>(48) 3264-1326</p>
+                <p><span class="subtitle-desktop">Whatsapp: </span>(48) 99989-7585</p>
                 <p><span class="subtitle-desktop">Email: </span>kikogasnfe@gmail.com</p>
             </div>
             <div class="footer-left">
                 <h3 class="footer-title">Filial Nova Trento</h3>
-                <p><span class="subtitle-desktop">Telefone: </span>(48) 3265-0001</p>
-                <p><span class="subtitle-desktop">Whatsapp: </span>(48) 99937-0107</p>
+                <p><span class="subtitle-desktop">Telefone: </span>(48) 3267-0880</p>
+                <p><span class="subtitle-desktop">Whatsapp: </span>(48) 99912-7470</p>
                 <p><span class="subtitle-desktop">Email: </span>kikogasnfe@gmail.com</p>
             </div>
 
@@ -247,6 +278,6 @@
             <p>Desenvolvido por <a href="https://github.com/brenoCapraroDeSouza" target="_blank">Breno Souza</a></p>
         </div>
     </footer>
-    <script src="kiko-home.js"></script>
+        <script src="kiko-home.js"></script>
 </body>
 </html>
