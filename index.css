@@ -45,6 +45,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -63,11 +64,6 @@ main {
     padding: 0 16px;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .menu nav {
     display: flex;
@@ -351,9 +347,9 @@ body {
 }
 
 .baixe-app right{
-    gap: 12px;
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
 .app img{
@@ -532,35 +528,9 @@ html {
 
 
 @media (max-width: 768px){
-    /* .gallery{
-        flex-direction: column;
-    } */
 
     .filiais-container{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .baixe-app{
-        gap: 10px;
-    }
-
-    header{
-        display: block;
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-     .left a{
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
 
@@ -581,10 +551,6 @@ html {
     .filial {
         width: 90%;
     }
-
-    .baixe-app{
-        padding-top: 20px;
-    }
     
     .app img {
         width: 125px;
@@ -603,26 +569,14 @@ html {
     .horario {
         flex-direction: column;
         text-align: center;
-    }
-    .horario li {
-        margin-top: 10px;
+        gap: 12px;
     }
     .horario-funcionamento {
-        margin-top: 5px;
         list-style: none;
     }
-
 }
 
 @media (max-width: 1024px){
-    /* .gallery{
-        columns: 2;
-    } 
-    .card-item{
-        margin-top: 10px;
-        justify-content: center;
-        align-items: center;
-    } */
 
     .about .middle {
         margin: 0 10px;
@@ -630,9 +584,11 @@ html {
     .subtitle-desktop{
         display: none;
     }
-
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){ 
 
-}
